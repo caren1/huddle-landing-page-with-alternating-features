@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    padding: 1em;
+    padding: 2em;
     width: 100%;
     top: 0;
 
@@ -70,18 +70,17 @@ header {
 .intro-section {
     height: 100%;
     background-image: url(/images/bg-hero-mobile.svg);
-    background-color: $veryPaleCyan;
-    background-position: top;
-    // background-repeat: no-repeat;
-    background-size: contain;
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
 
     .intro-section__cta {
+
         .intro-section__cta-content {
             padding: 2.5em;
 
             // 
             h1 {
-                margin-top: 3em;
+                margin-top: 4em;
                 font-size: 1.3em;
                 color: $veryDarkCyan;
             }
@@ -147,7 +146,7 @@ header {
         justify-content: center;
         align-items: center;
         border-radius: 15px;
-        box-shadow: 0 2px 5px hsla(0, 0, 0, 0.3);
+        box-shadow: 0 1px 10px hsla(0, 0, 0, 0.2);
         text-align: center;
         margin-bottom: 3em;
 
@@ -193,11 +192,13 @@ header {
 footer {
     position: relative;
     background-color: $veryDarkCyan;
+    width: 100%;
     // margin-top: 6em;
 
     .footer__cta-box {
         top: -100px;
-        left: 25px;
+        left: 5%;
+        // margin-left: -150px;
         position: absolute;
         border-radius: 15px;
         background-color: white;
@@ -205,7 +206,8 @@ footer {
         text-align: center;
         box-shadow: 0 2px 5px hsla(0, 0, 0, 0.3);
         max-width: 90%;
-        margin: auto;
+        width: 90%;
+        // margin: auto;
         // height: 100%;
 
         h2 {
@@ -250,12 +252,17 @@ footer {
         .contact-details-container {
             margin-top: 4em;
 
+            img {
+                margin-bottom: 2em;
+            }
+
             .contact-details {
                 display: flex;
                 width: 100%;
                 // justify-content: center;
                 align-items: center;
-                font-size: .9em;
+                font-size: 1em;
+                line-height: 1.5em;
                 margin-bottom: 1em;
 
 
@@ -284,6 +291,7 @@ footer {
         }
 
         .links-socials {
+
             max-width: 50%;
             margin: auto;
 
@@ -298,8 +306,8 @@ footer {
 
                     ion-icon {
 
-                        width: 20px;
-                        height: 20px;
+                        width: 15px;
+                        height: 15px;
                         border-radius: 50%;
                         text-align: center;
                         line-height: 100px;
@@ -314,8 +322,186 @@ footer {
     }
 
     p {
-        font-size: .8em;
         color: white;
-        // margin-bottom: 1em;
+        padding: 1em;
     }
+}
+
+@media screen and (min-width: 1055px) {
+
+    header {
+        .header-image img {
+            height: 1.5em;
+        }
+
+        .btn-primary {
+            padding: 1em 4em;
+            border-radius: 20px;
+        }
+    }
+
+    .intro-section {
+        background-image: url(/images/bg-hero-desktop.svg);
+        background-color: hsl(193, 100%, 96%);
+
+        .intro-section__cta {
+            padding: 8em 0 2em 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            // padding-left: 1em;
+
+
+            .intro-section__cta-content {
+                text-align: left;
+                height: 100%;
+                width: 80%;
+
+
+                h1 {
+                    margin-top: 0;
+                    font-size: 2.2em;
+                    width: 90%;
+                }
+
+                p {
+                    font-size: 1em;
+                    color: $veryDarkCyan;
+                    // width: 80%;
+                }
+
+                .btn-secondary {
+                    padding: 1.5em 6em;
+
+                    a {
+                        font-size: 1em;
+                    }
+                }
+
+            }
+
+            .intro-section__cta-image {
+                padding: 0;
+
+                img {
+                    max-width: 33em;
+                }
+            }
+        }
+
+    }
+
+    .offer-section {
+        .offer-section__single-offer {
+            flex-direction: row;
+            width: 80%;
+            margin: auto;
+            padding: 3em;
+            margin-bottom: 2em;
+
+            .single-offer-description {
+                text-align: left;
+                padding: 0;
+
+                h2 {
+                    font-size: 1.2em;
+                }
+
+                p {
+                    font-size: .9em;
+                    // width: 80%;
+                }
+            }
+
+            .single-offer-image {
+
+                padding: 1em;
+
+                img {
+                    max-width: 18em;
+                }
+            }
+        }
+
+        #midoffer {
+            display: flex;
+
+            .single-offer-description {
+                order: 2;
+            }
+
+            .single-offer-image {
+                order: 1;
+            }
+        }
+    }
+
+    footer {
+        .footer__cta-box {
+
+            width: 75%;
+            left: 12%;
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .btn-secondary {
+                padding: 1.5em 6em;
+
+                a {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .footer__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5em;
+
+            .contact-details-container {
+                width: 50%;
+                .contact-details {
+                    margin: 0 0 1em 0;
+                    flex: 1 1 50%;
+
+                    img {
+                        align-self: center;
+                        margin: 0 1em;
+                    }
+                }
+            }
+
+            .links-menu {
+                margin-top: 6em;
+    
+                ul li {
+                    list-style-type: none;
+                    margin: 0 2em 2em 0;
+                }
+            }
+
+            .links-socials {
+                ul li {
+                    ion-icon {
+                        width: 20px;
+                        height: 20px;
+                        padding: 15px;
+                        margin-right: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    p#copyright{
+        margin: 0;
+        padding: 0 3em 3em 0;
+        text-align: right;
+        font-size: 0.8em;
+    }
+
 }

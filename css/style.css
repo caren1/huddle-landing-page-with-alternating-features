@@ -24,7 +24,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  padding: 1em;
+  padding: 2em;
   width: 100%;
   top: 0;
 }
@@ -62,8 +62,7 @@ header .btn-primary:hover a {
   height: 100%;
   background-image: url(/images/bg-hero-mobile.svg);
   background-color: #ebfbff;
-  background-position: top;
-  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .intro-section .intro-section__cta .intro-section__cta-content {
@@ -71,7 +70,7 @@ header .btn-primary:hover a {
 }
 
 .intro-section .intro-section__cta .intro-section__cta-content h1 {
-  margin-top: 3em;
+  margin-top: 4em;
   font-size: 1.3em;
   color: #00252e;
 }
@@ -140,8 +139,8 @@ header .btn-primary:hover a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 15px;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin-bottom: 3em;
 }
@@ -177,11 +176,12 @@ header .btn-primary:hover a {
 footer {
   position: relative;
   background-color: #00252e;
+  width: 100%;
 }
 
 footer .footer__cta-box {
   top: -100px;
-  left: 25px;
+  left: 5%;
   position: absolute;
   border-radius: 15px;
   background-color: white;
@@ -190,7 +190,7 @@ footer .footer__cta-box {
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   max-width: 90%;
-  margin: auto;
+  width: 90%;
 }
 
 footer .footer__cta-box h2 {
@@ -233,6 +233,10 @@ footer .footer__content .contact-details-container {
   margin-top: 4em;
 }
 
+footer .footer__content .contact-details-container img {
+  margin-bottom: 2em;
+}
+
 footer .footer__content .contact-details-container .contact-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,7 +245,8 @@ footer .footer__content .contact-details-container .contact-details {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: .9em;
+  font-size: 1em;
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -287,8 +292,8 @@ footer .footer__content .links-socials ul li {
 }
 
 footer .footer__content .links-socials ul li ion-icon {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   text-align: center;
   line-height: 100px;
@@ -298,7 +303,160 @@ footer .footer__content .links-socials ul li ion-icon {
 }
 
 footer p {
-  font-size: .8em;
   color: white;
+  padding: 1em;
+}
+
+@media screen and (min-width: 1055px) {
+  header .header-image img {
+    height: 1.5em;
+  }
+  header .btn-primary {
+    padding: 1em 4em;
+    border-radius: 20px;
+  }
+  .intro-section {
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-color: #ebfbff;
+  }
+  .intro-section .intro-section__cta {
+    padding: 8em 0 2em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-content {
+    text-align: left;
+    height: 100%;
+    width: 80%;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-content h1 {
+    margin-top: 0;
+    font-size: 2.2em;
+    width: 90%;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-content p {
+    font-size: 1em;
+    color: #00252e;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-content .btn-secondary {
+    padding: 1.5em 6em;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-content .btn-secondary a {
+    font-size: 1em;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-image {
+    padding: 0;
+  }
+  .intro-section .intro-section__cta .intro-section__cta-image img {
+    max-width: 33em;
+  }
+  .offer-section .offer-section__single-offer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding: 3em;
+    margin-bottom: 2em;
+  }
+  .offer-section .offer-section__single-offer .single-offer-description {
+    text-align: left;
+    padding: 0;
+  }
+  .offer-section .offer-section__single-offer .single-offer-description h2 {
+    font-size: 1.2em;
+  }
+  .offer-section .offer-section__single-offer .single-offer-description p {
+    font-size: .9em;
+  }
+  .offer-section .offer-section__single-offer .single-offer-image {
+    padding: 1em;
+  }
+  .offer-section .offer-section__single-offer .single-offer-image img {
+    max-width: 18em;
+  }
+  .offer-section #midoffer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .offer-section #midoffer .single-offer-description {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .offer-section #midoffer .single-offer-image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer .footer__cta-box {
+    width: 75%;
+    left: 12%;
+  }
+  footer .footer__cta-box h2 {
+    font-size: 1.5em;
+  }
+  footer .footer__cta-box .btn-secondary {
+    padding: 1.5em 6em;
+  }
+  footer .footer__cta-box .btn-secondary a {
+    font-size: 1.2em;
+  }
+  footer .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5em;
+  }
+  footer .footer__content .contact-details-container {
+    width: 50%;
+  }
+  footer .footer__content .contact-details-container .contact-details {
+    margin: 0 0 1em 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  footer .footer__content .contact-details-container .contact-details img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 1em;
+  }
+  footer .footer__content .links-menu {
+    margin-top: 6em;
+  }
+  footer .footer__content .links-menu ul li {
+    list-style-type: none;
+    margin: 0 2em 2em 0;
+  }
+  footer .footer__content .links-socials ul li ion-icon {
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    margin-right: 0.5em;
+  }
+  p#copyright {
+    margin: 0;
+    padding: 0 3em 3em 0;
+    text-align: right;
+    font-size: 0.8em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

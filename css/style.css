@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/* HEADER SECTION */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  padding: 1em;
+  width: 100%;
+  top: 0;
+}
+
+header .header-image img {
+  height: 1em;
+}
+
+header .btn-primary {
+  padding: 0.5em 2em;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+header .btn-primary a {
+  font-weight: 700;
+  color: #00252e;
+  text-decoration: none;
+}
+
+header .btn-primary:hover {
+  background-color: #ff52bf;
+}
+
+header .btn-primary:hover a {
+  color: white;
+}
+
+/* INTRO SECTION */
+.intro-section {
+  height: 100%;
+  background-image: url(/images/bg-hero-mobile.svg);
+  background-color: #ebfbff;
+  background-position: top;
+  background-size: contain;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content {
+  padding: 2.5em;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content h1 {
+  margin-top: 3em;
+  font-size: 1.3em;
+  color: #00252e;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content p {
+  margin-top: 1.5em;
+  font-size: 0.85em;
+  color: #00252e;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content .btn-secondary {
+  padding: 1em 5em;
+  background-color: #ff52bf;
+  font-weight: 600;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin-top: 3em;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content .btn-secondary a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content .btn-secondary:hover {
+  background-color: #00252e;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-content .btn-secondary:hover a {
+  color: white;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-image {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 2.5em 2.5em 2.5em;
+  margin: auto;
+}
+
+.intro-section .intro-section__cta .intro-section__cta-image img {
+  margin: auto;
+  max-width: 16em;
+}
+
+/* OFFER SECTION */
+.offer-section {
+  background-color: white;
+  padding: 1.2em;
+}
+
+.offer-section .offer-section__single-offer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.offer-section .offer-section__single-offer .single-offer-description {
+  padding: 0 2.5em 3em 2.5em;
+}
+
+.offer-section .offer-section__single-offer .single-offer-description h2 {
+  font-size: 1em;
+  color: #00252e;
+}
+
+.offer-section .offer-section__single-offer .single-offer-description p {
+  margin-top: 1.2em;
+  font-size: 0.75em;
+  color: #808d99;
+}
+
+.offer-section .offer-section__single-offer .single-offer-image {
+  padding: 3em 2em;
+}
+
+.offer-section .offer-section__single-offer .single-offer-image img {
+  max-width: 12em;
+}
+
+.offer-section #lastofoffer {
+  margin-bottom: 8em;
+}
+
+/* FOOTER SECTION */
+footer {
+  position: relative;
+  background-color: #00252e;
+}
+
+footer .footer__cta-box {
+  top: -100px;
+  left: 25px;
+  position: absolute;
+  border-radius: 15px;
+  background-color: white;
+  padding: 1em;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  margin: auto;
+}
+
+footer .footer__cta-box h2 {
+  margin-top: 1em;
+  font-size: 0.9em;
+  color: #00252e;
+}
+
+footer .footer__cta-box .btn-secondary {
+  padding: 1em 3em;
+  background-color: #ff52bf;
+  font-weight: 600;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin: 2em 0 1em;
+}
+
+footer .footer__cta-box .btn-secondary a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+footer .footer__cta-box .btn-secondary:hover {
+  background-color: #00252e;
+}
+
+footer .footer__cta-box .btn-secondary:hover a {
+  color: white;
+}
+
+footer .footer__content {
+  padding: 1em;
+  color: white;
+  text-align: left;
+}
+
+footer .footer__content .contact-details-container {
+  margin-top: 4em;
+}
+
+footer .footer__content .contact-details-container .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .9em;
+  margin-bottom: 1em;
+}
+
+footer .footer__content .contact-details-container .contact-details a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer__content .contact-details-container .contact-details img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 1em;
+}
+
+footer .footer__content .links-menu {
+  margin-top: 2em;
+}
+
+footer .footer__content .links-menu ul li {
+  list-style-type: none;
+  margin-bottom: .6em;
+}
+
+footer .footer__content .links-socials {
+  max-width: 50%;
+  margin: auto;
+}
+
+footer .footer__content .links-socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__content .links-socials ul li {
+  list-style-type: none;
+}
+
+footer .footer__content .links-socials ul li ion-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid white;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+footer p {
+  font-size: .8em;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
